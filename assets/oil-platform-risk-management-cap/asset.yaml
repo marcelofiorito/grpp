@@ -1,0 +1,49 @@
+apiVersion: asset.sap/v1
+kind: Asset
+
+metadata:
+  name: oil-platform-risk-management-cap
+  version: "1.0.0"
+  description: >
+    Aplicação CAP (Node.js) com frontend React e SAP UI5 Web Components para
+    gerenciamento de riscos e monitoramento de incidentes em plataformas de
+    petróleo offshore.
+
+type: application
+
+sourceRoot: "."
+
+components:
+  - name: cap-srv
+    type: srv
+    buildPath: .
+    port: 4004
+    provides:
+      endpoints:
+        - path: /api/risk
+          protocol: http
+        - path: /
+          protocol: http
+    requires:
+      - name: hana-db
+        kind: platform-service
+        service: hana
+        plan: hdi-shared
+        lazy: true
+      - name: xsuaa
+        kind: platform-service
+        service: xsuaa
+        plan: application
+        lazy: true
+
+env:
+  NODE_ENV: production
+  LOG_LEVEL: info
+
+resources:
+  requests:
+    cpu: "100m"
+    memory: "256Mi"
+  limits:
+    cpu: "500m"
+    memory: "512Mi"

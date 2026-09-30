@@ -1,0 +1,15 @@
+{
+  "welcomeFile": "index.html",
+  "routes": [
+    {
+      "source": "^/api/(.*)$",
+      "target": "/api/$1",
+      "destination": "cap-backend"
+    },
+    {
+      "source": "^(.*)$",
+      "target": "$1",
+      "localDir": "."
+    }
+  ]
+}

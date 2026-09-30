@@ -1,0 +1,5 @@
+ID,code,name,location,status
+f1000001-0000-0000-0000-000000000001,P-001,Plataforma Alfa,Bacia de Campos - 22°S 40°W,Active
+f1000001-0000-0000-0000-000000000002,P-002,Plataforma Beta,Bacia de Santos - 25°S 44°W,Active
+f1000001-0000-0000-0000-000000000003,P-003,Plataforma Gamma,Bacia do Espírito Santo - 20°S 38°W,Maintenance
+f1000001-0000-0000-0000-000000000004,P-004,Plataforma Delta,Pré-Sal - 24°S 42°W,Active

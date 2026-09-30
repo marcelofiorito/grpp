@@ -1,0 +1,14 @@
+apiVersion: solution.sap/v1
+kind: Solution
+
+metadata:
+  name: oil-platform-risk-f9e24
+  version: "1.0.0"
+  description: >
+    Aplicação web para monitoramento de incidentes e gerenciamento de riscos
+    operacionais em plataformas de petróleo offshore. Permite registro de
+    incidentes, alertas automáticos para ocorrências críticas e dashboard
+    consolidado por plataforma.
+
+assets:
+  - ref: ./assets/oil-platform-risk-management-cap/asset.yaml

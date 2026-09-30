@@ -1,0 +1,8 @@
+ID,incident_ID,description,responsiblePerson,dueDate,status,completedAt,notes
+b1000001-0000-0000-0000-000000000001,a1000001-0000-0000-0000-000000000001,Isolar trecho da linha e substituir junta de vedação defeituosa,João Oliveira,2026-10-02,InProgress,,Aguardando peças de reposição no almoxarifado
+b1000001-0000-0000-0000-000000000002,a1000001-0000-0000-0000-000000000001,Inspecionar toda a linha de transferência do deck,Carlos Silva,2026-10-05,Pending,,Inspeção a ser realizada após reparo da junta
+b1000001-0000-0000-0000-000000000003,a1000001-0000-0000-0000-000000000002,Substituir sensor de pressão P-12,Pedro Santos,2026-09-30,InProgress,,Sensor reserva disponível no estoque
+b1000001-0000-0000-0000-000000000004,a1000001-0000-0000-0000-000000000003,Revisar todos os painéis elétricos da casa de bombas,Ana Ferreira,2026-10-10,Pending,,Inspeção completa agendada
+b1000001-0000-0000-0000-000000000005,a1000001-0000-0000-0000-000000000004,Revisar procedimento de manuseio de produtos químicos,Marcos Andrade,2026-09-30,Completed,2026-09-28T14:00:00Z,Treinamento realizado com equipe do laboratório
+b1000001-0000-0000-0000-000000000006,a1000001-0000-0000-0000-000000000005,Realizar balanceamento e alinhamento da bomba BC-03,Paulo Mendes,2026-10-03,Pending,,
+b1000001-0000-0000-0000-000000000007,a1000001-0000-0000-0000-000000000006,Substituir detector GD-07,Ricardo Torres,2026-10-01,InProgress,,Peça solicitada ao fornecedor
