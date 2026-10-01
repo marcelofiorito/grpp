@@ -12,7 +12,10 @@ modules:
       memory: 512M
       disk-quota: 1024M
     build-parameters:
-      builder: npm
+      builder: custom
+      commands:
+        - npm install
+        - npm run build
       build-result: .
       ignore:
         - node_modules/
@@ -20,6 +23,7 @@ modules:
         - test/
         - app/risk-ui/src/
         - app/risk-ui/node_modules/
+        - app/risk-ui/webapp/
         - gen/
     properties:
       NODE_ENV: production

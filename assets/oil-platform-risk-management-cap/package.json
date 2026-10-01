@@ -8,8 +8,8 @@
   "scripts": {
     "start": "cds-deploy && cds-serve",
     "dev": "cds watch",
-    "build": "cds build --production",
-    "build:ui": "cd app/risk-ui && npm install && npm run build",
+    "build": "npm run build:ui",
+    "build:ui": "cd app/risk-ui && npm install && rm -rf assets && npm run build",
     "test": "jest --runInBand"
   },
   "dependencies": {
